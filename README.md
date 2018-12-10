@@ -1,4 +1,5 @@
 # julkalender
+Glamorous Christmas calendar created with vue, vuex and vue cli 
 
 ## Project setup
 ```
