@@ -1,7 +1,7 @@
 <template>
     <div @click="open">
       <p v-show="!showLucka"> {{ day.date }} </p>
-      <p class="opened" v-show="showLucka"> {{ day.contains }} </p>
+      <p v-show="showLucka"> {{ day.contains }} </p>
     </div>
 </template>
 
@@ -18,7 +18,10 @@ export default {
   methods: {
     open: function() {
       this.showLucka = !this.showLucka;
-    },
+      if (!this.showLucka) { // If opened, it can't be closed
+        this.showLucka = !this.showLucka;
+      }
+    }
   },
 }
 </script>
@@ -34,8 +37,5 @@ h1 {
 }
 a {
   color: #42b983;
-}
-.opened {
-  background-color: gray;
 }
 </style>

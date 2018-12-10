@@ -8,55 +8,55 @@ export default new Vuex.Store({
     days: [
       {
         date: 1,
-        contains: 'Godis!',
+        contains: 'Candy!',
       },
       {
         date: 2,
-        contains: 'Godis!',
+        contains: 'iPhone!',
       },
       {
         date: 3,
-        contains: 'Godis!',
+        contains: 'Chips!',
       },
       {
         date: 4,
-        contains: 'Godis!',
+        contains: 'iPad!',
       },
       {
         date: 5,
-        contains: 'Godis!',
+        contains: 'iMac!',
       },
       {
         date: 6,
-        contains: 'Godis!',
+        contains: 'Trash',
       },
       {
         date: 7,
-        contains: 'Godis!',
+        contains: 'Cat!',
       },
       {
         date: 8,
-        contains: 'Godis!',
+        contains: '2 cats!',
       },
       {
         date: 9,
-        contains: 'Godis!',
+        contains: 'Sugar!',
       },
       {
         date: 10,
-        contains: 'Godis!',
+        contains: 'Sushi!',
       },
       {
         date: 11,
-        contains: 'Godis!',
+        contains: 'Xbox!',
       },
       {
         date: 12,
-        contains: 'Godis!',
+        contains: 'Cash!',
       },
       {
         date: 13,
-        contains: 'Godis!',
+        contains: 'BLOOD',
       },
       {
         date: 14,
@@ -64,15 +64,15 @@ export default new Vuex.Store({
       },
       {
         date: 15,
-        contains: 'Godis!',
+        contains: 'Lakrits',
       },
       {
         date: 16,
-        contains: 'Godis!',
+        contains: 'DEATH',
       },
       {
         date: 17,
-        contains: 'Godis!',
+        contains: 'Money!',
       },
       {
         date: 18,
@@ -80,27 +80,27 @@ export default new Vuex.Store({
       },
       {
         date: 19,
-        contains: 'Godis!',
+        contains: 'Morot',
       },
       {
         date: 20,
-        contains: 'Godis!',
+        contains: 'ÖL',
       },
       {
         date: 21,
-        contains: 'Godis!',
+        contains: 'Sprit',
       },
       {
         date: 22,
-        contains: 'Godis!',
+        contains: 'PS4!',
       },
       {
         date: 23,
-        contains: 'Godis!',
+        contains: 'Slack!',
       },
       {
         date: 24,
-        contains: 'Gurka!',
+        contains: 'Gurka.',
       }
     ],
   },
