@@ -2,20 +2,16 @@
   <div id="app">
     <Julkalender>
     </Julkalender>
-    <Lucka>
-    </Lucka>
   </div>
 </template>
 
 <script>
 import Julkalender from './components/Julkalender.vue'
-import Lucka from './components/Lucka.vue'
 
 export default {
   name: 'app',
   components: {
-    Julkalender,
-    Lucka
+    Julkalender
   }
 }
 </script>

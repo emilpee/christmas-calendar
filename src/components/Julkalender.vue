@@ -1,26 +1,9 @@
 <template>
-<div class="kalender">
-  <h1>Julkalender</h1>
-  <ul>
-    <li v-for="date in days"
-        class="lucka"
-        @click="open($event)"
-        :id="date.id"
-        v-show="!showLucka"
-        :key="date.id"> 
-        {{ date.date }} 
-    </li> <!-- Gör dem på olika nivåer! -->
-  </ul>
-  <ul>
-    <li class="lucka"  
-        @click="open($event)" 
-        v-show="showLucka" 
-        :id="contains.id"
-        v-for="contains in days">
-       {{ contains.contains }} 
-    </li> 
-  </ul>
-</div>
+  <div class="kalender">
+    <div class="lucka" v-for="day in days" :key="day.days">
+      <Lucka :day="day" />
+    </div>
+  </div>
 </template>
 
 <script>
@@ -28,10 +11,8 @@ import Lucka from './Lucka.vue';
 
 export default {
   name: 'Julkalender',
-  data() {
-    return {
-      showLucka: false
-    }
+  components: {
+    Lucka
   },
   computed: {
     days() {
@@ -39,12 +20,8 @@ export default {
     }
   },
   methods: {
-    open: function(e) {
-      if (e.target.id) {
-        console.log(e.target.id);
-        this.showLucka = !this.showLucka;
-        // date.id?
-      }
+    open: function() {
+      this.showLucka = !this.showLucka;
     },
   }
 }
@@ -59,19 +36,17 @@ h1 {
   background-color: red;
   width: 250px;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
 .lucka {
   display: inline-block;
   width: 50px;
   height: 50px;
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 700;
   padding: 2%;
   margin: 0.5%;
-  background-color: rgb(143, 138, 138);
-  border: 2px solid black;
+  background-color: rgb(236, 171, 72);
+  border: 1px dotted black;
+  border-left: 1px white solid;
 }
 a {
   color: #42b983;
