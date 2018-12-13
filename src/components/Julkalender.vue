@@ -63,4 +63,7 @@ a {
   border: 7px groove #060697;
   cursor: pointer;
 }
+.kalender :nth-child() {
+  background-color: black;
+}
 </style>

@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <Julkalender>
-    </Julkalender>
+    <Countdown/>
+    <Julkalender/>
   </div>
 </template>
 
 <script>
 import Julkalender from './components/Julkalender.vue'
+import Countdown from '@/components/Countdown.vue'
 
 export default {
   name: 'app',
   components: {
-    Julkalender
+    Julkalender,
+    Countdown
   }
 }
 </script>
