@@ -1,7 +1,9 @@
 <template>
   <div id="timer">
       <section> 
-        Days left until Christmas Eve: <strong><span>{{ calc() }}</span></strong>
+        <p>Days left until next Christmas Eve: 
+            <strong><span>{{ calc() }}</span></strong> 
+        </p>
       </section>
   </div>
 </template>
@@ -12,7 +14,7 @@ export default {
     data() {
         return {
           currentDay: new Date().getTime(),
-          christmas: new Date("12-24-2018").getTime()
+          christmas: new Date("12-24-2019").getTime()
         }
     },
     methods: {
@@ -26,8 +28,8 @@ export default {
 <style scoped>
 #timer {
     background-color: rgb(22, 22, 22);
-    border: 7px ridge rgb(236, 65, 65);
-    width: 960px;
+    border: 5px solid #030375;
+    width: 964px;
     margin: 0 auto;
 }
 section {

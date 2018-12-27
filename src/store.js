@@ -84,11 +84,11 @@ export default new Vuex.Store({
       },
       {
         date: 20,
-        contains: 'ÖL',
+        contains: 'Glögg',
       },
       {
         date: 21,
-        contains: 'Sprit',
+        contains: 'Skumtomte',
       },
       {
         date: 22,

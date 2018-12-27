@@ -59,7 +59,7 @@ a {
   width: 960px;
   margin: 0 auto;
   height: 795px;
-  padding-top: 3%;
+  padding-top: 1.5%;
   border: 7px groove #060697;
   cursor: pointer;
 }
